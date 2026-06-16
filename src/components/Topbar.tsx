@@ -1,14 +1,12 @@
+import { useTheme } from '../contexts/useTheme'
+
 interface TopbarProps {
   onMenuClick: () => void
-  onDarkModeClick: () => void
-  isDark: boolean
 }
 
-export default function Topbar({
-  onMenuClick,
-  onDarkModeClick,
-  isDark,
-}: TopbarProps) {
+export default function Topbar({ onMenuClick }: TopbarProps) {
+  const { isDark, toggleDarkMode } = useTheme()
+
   return (
     <header className="h-16 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 flex items-center justify-between px-6">
       {/* Left: Menu button */}
@@ -28,7 +26,7 @@ export default function Topbar({
       {/* Right: Dark mode toggle & user menu */}
       <div className="flex items-center gap-4">
         <button
-          onClick={onDarkModeClick}
+          onClick={toggleDarkMode}
           className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors"
           aria-label="Toggle dark mode"
         >
