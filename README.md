@@ -18,7 +18,7 @@ A modern, production-ready analytics dashboard built with React, TypeScript, and
 
 ## 📸 Screenshots
 
-*Screenshots coming soon*
+![Dashboard Overview](screenshots/dashboard.png)
 
 ## 🛠 Tech Stack
 
