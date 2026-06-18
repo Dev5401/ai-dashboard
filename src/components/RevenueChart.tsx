@@ -7,21 +7,21 @@ import {
   Tooltip,
   ResponsiveContainer,
   Legend,
-} from 'recharts'
-import type { RevenueDataPoint } from '../data/types'
-import { useTheme } from '../contexts/useTheme'
-import { formatRevenue } from '../utils/formatRevenue'
+} from 'recharts';
+import type { RevenueDataPoint } from '../data/types';
+import { useTheme } from '../contexts/useTheme';
+import { formatRevenue } from '../utils/formatRevenue';
 
 interface RevenueChartProps {
-  data: RevenueDataPoint[]
+  data: RevenueDataPoint[];
 }
 
 export default function RevenueChart({ data }: RevenueChartProps) {
-  const { isDark } = useTheme()
+  const { isDark } = useTheme();
 
   // Colors adapt to dark mode
-  const textColor = isDark ? '#9ca3af' : '#6b7280'
-  const gridColor = isDark ? '#374151' : '#e5e7eb'
+  const textColor = isDark ? '#9ca3af' : '#6b7280';
+  const gridColor = isDark ? '#374151' : '#e5e7eb';
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-6">
@@ -75,5 +75,5 @@ export default function RevenueChart({ data }: RevenueChartProps) {
         </LineChart>
       </ResponsiveContainer>
     </div>
-  )
+  );
 }

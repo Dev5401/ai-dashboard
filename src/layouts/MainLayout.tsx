@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import { Outlet } from 'react-router-dom'
-import { useTheme } from '../contexts/useTheme'
-import Sidebar from '../components/Sidebar'
-import Topbar from '../components/Topbar'
+import { useState } from 'react';
+import { Outlet } from 'react-router-dom';
+import { useTheme } from '../contexts/useTheme';
+import Sidebar from '../components/Sidebar';
+import Topbar from '../components/Topbar';
 
 export default function MainLayout() {
-  const [sidebarOpen, setSidebarOpen] = useState(true)
-  const isDark = useTheme()
+  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const isDark = useTheme();
 
-  const toggleSidebar = () => setSidebarOpen(!sidebarOpen)
+  const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
 
   return (
     <div className={isDark ? 'dark' : ''}>
@@ -22,5 +22,5 @@ export default function MainLayout() {
         </div>
       </div>
     </div>
-  )
+  );
 }

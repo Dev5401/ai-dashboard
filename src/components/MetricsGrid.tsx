@@ -1,8 +1,8 @@
-import MetricCard from './MetricCard'
-import type { DashboardMetrics } from '../data/types'
+import MetricCard from './MetricCard';
+import type { DashboardMetrics } from '../data/types';
 
 interface MetricsGridProps {
-  metrics: DashboardMetrics
+  metrics: DashboardMetrics;
 }
 
 export default function MetricsGrid({ metrics }: MetricsGridProps) {
@@ -40,5 +40,5 @@ export default function MetricsGrid({ metrics }: MetricsGridProps) {
         changeType="decrease"
       />
     </div>
-  )
+  );
 }

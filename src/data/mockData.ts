@@ -4,7 +4,7 @@ import type {
   TrafficSource,
   ActivityLog,
   DashboardMetrics,
-} from './types'
+} from './types';
 
 // 12 months of revenue data
 export const revenueData: RevenueDataPoint[] = [
@@ -20,7 +20,7 @@ export const revenueData: RevenueDataPoint[] = [
   { date: 'Oct', revenue: 4500, users: 520 },
   { date: 'Nov', revenue: 5200, users: 640 },
   { date: 'Dec', revenue: 6100, users: 780 },
-]
+];
 
 // Mock users
 export const userData: UserData[] = [
@@ -88,7 +88,7 @@ export const userData: UserData[] = [
     status: 'active',
     totalSpent: 1950,
   },
-]
+];
 
 // Traffic sources
 export const trafficSources: TrafficSource[] = [
@@ -96,7 +96,7 @@ export const trafficSources: TrafficSource[] = [
   { name: 'Paid Ads', value: 3200, percentage: 27 },
   { name: 'Referral', value: 2100, percentage: 18 },
   { name: 'Direct', value: 1900, percentage: 15 },
-]
+];
 
 // Activity log
 export const activityLog: ActivityLog[] = [
@@ -135,7 +135,7 @@ export const activityLog: ActivityLog[] = [
     timestamp: '2024-01-14 18:50',
     type: 'purchase',
   },
-]
+];
 
 // Dashboard metrics summary
 export const dashboardMetrics: DashboardMetrics = {
@@ -143,4 +143,4 @@ export const dashboardMetrics: DashboardMetrics = {
   totalUsers: 3239,
   conversionRate: 3.24,
   churnRate: 1.8,
-}
+};

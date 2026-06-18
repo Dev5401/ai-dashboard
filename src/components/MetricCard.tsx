@@ -1,9 +1,9 @@
 interface MetricCardProps {
-  label: string
-  value: number | string
-  format?: 'currency' | 'number' | 'percentage'
-  change: number
-  changeType: 'increase' | 'decrease'
+  label: string;
+  value: number | string;
+  format?: 'currency' | 'number' | 'percentage';
+  change: number;
+  changeType: 'increase' | 'decrease';
 }
 
 export default function MetricCard({
@@ -14,17 +14,17 @@ export default function MetricCard({
   changeType,
 }: MetricCardProps) {
   const formatValue = (val: number | string) => {
-    if (typeof val === 'string') return val
-    if (format === 'currency') return `$${val.toLocaleString()}`
-    if (format === 'percentage') return `${val}%`
-    return val.toLocaleString()
-  }
+    if (typeof val === 'string') return val;
+    if (format === 'currency') return `$${val.toLocaleString()}`;
+    if (format === 'percentage') return `${val}%`;
+    return val.toLocaleString();
+  };
 
-  const isPositive = changeType === 'increase'
-  const changeColor = isPositive ? 'text-green-600' : 'text-red-600'
+  const isPositive = changeType === 'increase';
+  const changeColor = isPositive ? 'text-green-600' : 'text-red-600';
   const changeBgColor = isPositive
     ? 'bg-green-50 dark:bg-green-900/20'
-    : 'bg-red-50 dark:bg-red-900/20'
+    : 'bg-red-50 dark:bg-red-900/20';
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-6 hover:shadow-lg transition-shadow">
@@ -53,5 +53,5 @@ export default function MetricCard({
         vs last month
       </p>
     </div>
-  )
+  );
 }

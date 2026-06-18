@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-import type { NavigationItem } from '../types'
+import { Link } from 'react-router-dom';
+import type { NavigationItem } from '../types';
 
 const navItems: NavigationItem[] = [
   { label: 'Dashboard', href: '/', icon: '📊' },
@@ -7,10 +7,10 @@ const navItems: NavigationItem[] = [
   { label: 'Users', href: '/users', icon: '👥' },
   { label: 'Reports', href: '/reports', icon: '📋' },
   { label: 'Settings', href: '/settings', icon: '⚙️' },
-]
+];
 
 interface SidebarProps {
-  isOpen: boolean
+  isOpen: boolean;
 }
 
 export default function Sidebar({ isOpen }: SidebarProps) {
@@ -47,5 +47,5 @@ export default function Sidebar({ isOpen }: SidebarProps) {
         <div className="text-xs text-gray-400 text-center">v1.0.0</div>
       </div>
     </aside>
-  )
+  );
 }

@@ -1,16 +1,16 @@
-import { useDashboardData } from '../hooks/useDashboardData'
-import MetricsGrid from '../components/MetricsGrid'
-import ChartsGrid from '../components/ChartsGrid'
+import { useDashboardData } from '../hooks/useDashboardData';
+import MetricsGrid from '../components/MetricsGrid';
+import ChartsGrid from '../components/ChartsGrid';
 
 export default function Dashboard() {
-  const { metrics, revenue, loading } = useDashboardData()
+  const { metrics, revenue, loading } = useDashboardData();
 
   if (loading) {
     return (
       <div className="flex items-center justify-center h-64">
         <p className="text-gray-500 dark:text-gray-400">Loading...</p>
       </div>
-    )
+    );
   }
 
   return (
@@ -38,5 +38,5 @@ export default function Dashboard() {
         </p>
       </div>
     </div>
-  )
+  );
 }

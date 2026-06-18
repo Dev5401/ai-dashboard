@@ -1,9 +1,9 @@
-import RevenueChart from './RevenueChart'
-import UserGrowthChart from './useGrowthChart'
-import type { RevenueDataPoint } from '../data/types'
+import RevenueChart from './RevenueChart';
+import UserGrowthChart from './useGrowthChart';
+import type { RevenueDataPoint } from '../data/types';
 
 interface ChartsGridProps {
-  data: RevenueDataPoint[]
+  data: RevenueDataPoint[];
 }
 
 export default function ChartsGrid({ data }: ChartsGridProps) {
@@ -12,5 +12,5 @@ export default function ChartsGrid({ data }: ChartsGridProps) {
       <RevenueChart data={data} />
       <UserGrowthChart data={data} />
     </div>
-  )
+  );
 }

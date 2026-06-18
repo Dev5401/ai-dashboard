@@ -1,11 +1,11 @@
-import { useTheme } from '../contexts/useTheme'
+import { useTheme } from '../contexts/useTheme';
 
 interface TopbarProps {
-  onMenuClick: () => void
+  onMenuClick: () => void;
 }
 
 export default function Topbar({ onMenuClick }: TopbarProps) {
-  const { isDark, toggleDarkMode } = useTheme()
+  const { isDark, toggleDarkMode } = useTheme();
 
   return (
     <header className="h-16 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 flex items-center justify-between px-6">
@@ -37,5 +37,5 @@ export default function Topbar({ onMenuClick }: TopbarProps) {
         </div>
       </div>
     </header>
-  )
+  );
 }

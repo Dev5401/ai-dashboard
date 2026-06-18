@@ -6,20 +6,20 @@ import {
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
-} from 'recharts'
-import type { RevenueDataPoint } from '../data/types'
-import { useTheme } from '../contexts/useTheme'
-import { formatRevenue } from '../utils/formatRevenue'
+} from 'recharts';
+import type { RevenueDataPoint } from '../data/types';
+import { useTheme } from '../contexts/useTheme';
+import { formatRevenue } from '../utils/formatRevenue';
 
 interface UserGrowthChartProps {
-  data: RevenueDataPoint[]
+  data: RevenueDataPoint[];
 }
 
 export default function UserGrowthChart({ data }: UserGrowthChartProps) {
-  const { isDark } = useTheme()
+  const { isDark } = useTheme();
 
-  const textColor = isDark ? '#9ca3af' : '#6b7280'
-  const gridColor = isDark ? '#374151' : '#e5e7eb'
+  const textColor = isDark ? '#9ca3af' : '#6b7280';
+  const gridColor = isDark ? '#374151' : '#e5e7eb';
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-6">
@@ -77,5 +77,5 @@ export default function UserGrowthChart({ data }: UserGrowthChartProps) {
         </AreaChart>
       </ResponsiveContainer>
     </div>
-  )
+  );
 }
