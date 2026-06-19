@@ -5,7 +5,7 @@ import Sidebar from '../components/Sidebar';
 import Topbar from '../components/Topbar';
 
 export default function MainLayout() {
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const isDark = useTheme();
 
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);

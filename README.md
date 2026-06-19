@@ -18,8 +18,8 @@ A modern, production-ready analytics dashboard built with React, TypeScript, and
 
 ## 📸 Screenshots
 
-![Dashboard with Charts](./screenshots/dashboard-charts.png)
-*Interactive charts showing revenue trends and user growth with dark mode support*
+![Dashboard with All Charts](./screenshots/dashboard-all-charts.png)
+*Interactive charts: revenue trend, user growth, monthly comparison, and traffic sources with dark mode*
 
 ## 🛠 Tech Stack
 
