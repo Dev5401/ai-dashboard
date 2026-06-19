@@ -1,9 +1,9 @@
 import { useDashboardData } from '../hooks/useDashboardData';
 import MetricsGrid from '../components/MetricsGrid';
-import ChartsGrid from '../components/ChartsGrid';
+import ChartsSection from '../components/ChartsSection';
 
 export default function Dashboard() {
-  const { metrics, revenue, loading } = useDashboardData();
+  const { metrics, revenue, traffic, loading } = useDashboardData();
 
   if (loading) {
     return (
@@ -29,12 +29,12 @@ export default function Dashboard() {
       <MetricsGrid metrics={metrics} />
 
       {/* Charts */}
-      <ChartsGrid data={revenue} />
+      <ChartsSection revenueData={revenue} trafficData={traffic} />
 
       {/* Coming next */}
       <div className="p-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
         <p className="text-sm text-blue-900 dark:text-blue-100">
-          💡 More charts (pie, bar) and data tables coming on Day 7–10
+          💡 Data tables with sorting and filtering coming on Day 8–10
         </p>
       </div>
     </div>

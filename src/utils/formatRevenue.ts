@@ -1,3 +1,4 @@
 export const formatRevenue = (value: number): React.ReactNode => {
-  return `$${value.toLocaleString()}`;
+  const num = typeof value === 'number' ? value : Number(value ?? 0);
+  return `$${num.toLocaleString()}`;
 };

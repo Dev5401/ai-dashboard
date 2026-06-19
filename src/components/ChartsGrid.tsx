@@ -1,5 +1,5 @@
 import RevenueChart from './RevenueChart';
-import UserGrowthChart from './useGrowthChart';
+import UserGrowthChart from './UserGrowthChart';
 import type { RevenueDataPoint } from '../data/types';
 
 interface ChartsGridProps {

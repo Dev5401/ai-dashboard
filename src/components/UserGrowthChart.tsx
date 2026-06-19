@@ -63,7 +63,7 @@ export default function UserGrowthChart({ data }: UserGrowthChartProps) {
               borderRadius: '8px',
               color: isDark ? '#f3f4f6' : '#111827',
             }}
-            formatter={formatRevenue}
+            formatter={(value: any) => formatRevenue(value)}
             labelStyle={{ color: isDark ? '#f3f4f6' : '#111827' }}
           />
           <Area
