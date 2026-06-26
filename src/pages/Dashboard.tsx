@@ -14,13 +14,13 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6 sm:space-y-8">
       {/* Page header */}
       <div>
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+        <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-1 sm:mb-2">
           Dashboard
         </h1>
-        <p className="text-gray-600 dark:text-gray-400">
+        <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
           Welcome back! Here's your performance overview.
         </p>
       </div>
@@ -32,9 +32,9 @@ export default function Dashboard() {
       <ChartsSection revenueData={revenue} trafficData={traffic} />
 
       {/* Coming next */}
-      <div className="p-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
-        <p className="text-sm text-blue-900 dark:text-blue-100">
-          💡 Data tables with sorting and filtering coming on Day 8–10
+      <div className="p-4 sm:p-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
+        <p className="text-xs sm:text-sm text-blue-900 dark:text-blue-100">
+          💡 AI assistant sidebar with Claude API coming on Day 11–15
         </p>
       </div>
     </div>
